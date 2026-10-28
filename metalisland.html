@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metal Island</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">Metal<span>Island</span></div>
+        <div>
+          <div class="side-label">Workspace</div>
+          <nav class="nav" id="nav">
+            <button class="active" data-page="dashboard">
+              <b>▦</b> Dashboard
+            </button>
+            <button data-page="documents"><b>▤</b> Quotes & Invoices</button>
+            <button data-page="clients"><b>♙</b> Clients</button>
+            <button data-page="records"><b>▣</b> Records</button>
+            <button data-page="settings"><b>⚙</b> Business settings</button>
+          </nav>
+        </div>
+        <div class="sidebar-note">
+          A simple workspace for your business paperwork.<br />Data is saved in
+          this browser on this device.
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1 id="topTitle">Dashboard</h1>
+            <p id="todayText">Your business at a glance</p>
+          </div>
+          <button class="primary" id="newDocTop">＋ Create document</button>
+        </header>
+        <div class="content" id="content"></div>
+      </main>
+    </div>
+    <div
+      class="modal-backdrop"
+      id="docBackdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Create or edit document"
+    >
+      <div class="modal" id="docModal"></div>
+    </div>
+    <div
+      class="modal-backdrop"
+      id="viewBackdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Document details"
+    >
+      <div class="modal" id="viewModal"></div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
