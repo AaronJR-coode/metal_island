@@ -473,6 +473,8 @@
       .hide {
         display: none !important;
       }
+
+
       @media (max-width: 950px) {
         .app {
           grid-template-columns: 1fr;
@@ -514,7 +516,7 @@
           grid-template-columns: 1fr;
         }
       }
-      @media (max-width: 600px) {
+      @media (max-width: 400px) {
         .stats {
           gap: 9px;
         }
